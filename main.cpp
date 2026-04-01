@@ -2,7 +2,8 @@
 
 int main()
 {
- double c1,c2,c3,a,b,n;
+ double c1,c2,c3,a,b;
+ unsigned int n;
  //std::cout<<"Inserisci parametri, intervallo, n campionamento";
  std::cin>>c1>>c2>>c3>>a>>b>>n;
  double s=(b-a)/n; //lo calcolo qui, così ogni volta non devo farlo nel for visto cche da lo stesso ris
