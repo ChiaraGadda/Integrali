@@ -55,10 +55,6 @@ I parametri passati in input rappresentano:
 
 Questo progetto è stato sviluppato per il corso di **Programmazione 1**, svolto presso **Università di Genova (UniGe)**, nell’ambito del **primo anno della laurea triennale in Matematica**.
 
-## 👨‍💻 Autori
-
-Progetto realizzato da studenti del corso (SMID).
-
 ---
 
 ## 📝 Note
