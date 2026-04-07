@@ -1,7 +1,3 @@
-Ecco una versione aggiornata e professionale del tuo `README.md`. Ho riorganizzato le sezioni per dare risalto alla nuova **Versione 2.0** e ho aggiunto tutte le istruzioni tecniche per l'installazione delle dipendenze e l'uso multi-piattaforma.
-
----
-
 # Calcolo di Integrali con il Metodo dei Trapezi (v2.0)
 
 Questo progetto implementa un sistema per il calcolo approssimato di integrali definiti. Con la **Release 2.0**, il programma è passato da un supporto limitato alle sole funzioni quadratiche a un potente **Parser Dinamico** capace di interpretare espressioni matematiche arbitrarie fornite in tempo reale.
@@ -43,16 +39,18 @@ brew install muparser
 Se non hai accesso a un package manager, puoi scaricare i sorgenti direttamente da [GitHub muParser](https://github.com/beltoforion/muparser) e compilare includendo i file `.h` e `.cpp` nella cartella del progetto.
 
 ---
+## 🛠️ Compilazione
+
+Dato che il progetto ora utilizza una libreria esterna, il comando di compilazione deve includere il "link" a muParser:
+
+**Sistemi Unix (Linux/macOS):**
+```bash
+g++ main.cpp personal.cpp -o generatore -lmuparser
+g++ integrali.cpp personal.cpp -o calcolatore
+```
+---
 
 ## ▶️ Utilizzo da Terminale
-
-Talvolta sistemi come Visual Studio Code producono un'errore nella compilazione poichè non sono in grado di compilare più file contemporaneamente e richiedere le dipendenze necessarie. In tal caso si può ovviare con le seguenti linee di codice:
-
-### 🐧 Linux & 🍎 macOS (Bash/Zsh)
-```bash
-#lo faccio per tutti i file di cui necessito "l'eseguibile" -> dopo -o opsso decidere di chiamare il file in maniera differente
-g++ integrali1.cpp personal.cpp -o generatore -lmuparser
-```
 
 La nuova sintassi richiede l'invio della **funzione come stringa** (tra virgolette) seguita dai parametri dell'intervallo.
 
@@ -81,18 +79,6 @@ Ecco alcuni esempi di comandi pronti all'uso per testare la precisione del progr
    ```bash
    echo "sin(x)+2" 0 3.14 200 | ./generatore | ./calcolatore
    ```
-
----
-
-## 🛠️ Compilazione
-
-Dato che il progetto ora utilizza una libreria esterna, il comando di compilazione deve includere il "link" a muParser:
-
-**Sistemi Unix (Linux/macOS):**
-```bash
-g++ main.cpp personal.cpp -o generatore -lmuparser
-g++ integrali.cpp personal.cpp -o calcolatore
-```
 
 ---
 
