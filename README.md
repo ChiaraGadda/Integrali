@@ -1,7 +1,3 @@
-Ecco una versione aggiornata e professionale del tuo `README.md`. Ho riorganizzato le sezioni per dare risalto alla nuova **Versione 2.0** e ho aggiunto tutte le istruzioni tecniche per l'installazione delle dipendenze e l'uso multi-piattaforma.
-
----
-
 # Calcolo di Integrali con il Metodo dei Trapezi (v2.0)
 
 Questo progetto implementa un sistema per il calcolo approssimato di integrali definiti. Con la **Release 2.0**, il programma è passato da un supporto limitato alle sole funzioni quadratiche a un potente **Parser Dinamico** capace di interpretare espressioni matematiche arbitrarie fornite in tempo reale.
